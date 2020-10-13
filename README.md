@@ -1,5 +1,6 @@
 # f3arra1n v2.12e cleaned
 
-Originally obfuscated with Crypto Obfuscator, cleaned with de4dot.
+Originally obfuscated with Crypto Obfuscator for some dumb shitty reason, cleaned with de4dot in 2 seconds.
 
-If you are the creator of this program, your security is fucking shit.
+
+F3ar, if you're reading this. Make your app security better
