@@ -5,28 +5,39 @@
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>True</UseWindowsForms>
     <TargetFramework>net472</TargetFramework>
-    <Prefer32Bit>True</Prefer32Bit>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>Preview</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>ilikeyou.pfx</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>F3arRa1n-Windows.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="LibUsbDotNet.LibUsbDotNet">
-      <HintPath>C:\Users\Michael\Downloads\F3arWIN_212e CLEAN\F3arWIN_212e CLEAN\LibUsbDotNet.LibUsbDotNet.dll</HintPath>
+      <HintPath>C:\Users\11040\Downloads\de4dot-net45 (1)\LibUsbDotNet.LibUsbDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet">
-      <HintPath>C:\Users\Michael\Downloads\F3arWIN_212e CLEAN\F3arWIN_212e CLEAN\Renci.SshNet.dll</HintPath>
+      <HintPath>C:\Users\11040\Downloads\de4dot-net45 (1)\Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Users\Michael\Downloads\F3arWIN_212e CLEAN\F3arWIN_212e CLEAN\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Users\11040\Downloads\de4dot-net45 (1)\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="plist-cil">
-      <HintPath>C:\Users\Michael\Downloads\F3arWIN_212e CLEAN\F3arWIN_212e CLEAN\plist-cil.dll</HintPath>
+      <HintPath>C:\Users\11040\Downloads\de4dot-net45 (1)\plist-cil.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Core">
-      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
       <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.IO.Compression.FileSystem\v4.0_4.0.0.0__b77a5c561934e089\System.IO.Compression.FileSystem.dll</HintPath>
